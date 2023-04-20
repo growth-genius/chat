@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active:
+      - local
+    include:
+      - common
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/test
+
